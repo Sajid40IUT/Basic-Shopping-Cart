@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+
+<!--
+    *General Work flow:
+    - First we login using the form in index.html and passing it through the loginServlet
+    - Then we are validated using cookies in the loginSuccessful
+
+-->
+
+Please enter your name below:
+<form name="loginForm" method="post" action="loginServlet">
+    <input type="text" name="username" />
+    <input type="password" name="password">
+    <input type="submit" name="submit" value="submit" />
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+
+<!--
+    *General Work flow:
+    - First we login using the form in index.html and passing it through the loginServlet
+    - Then we are validated using cookies in the loginSuccessfulServlet  which is in fact included in the loginServlet
+    - In that page we can view the cart From the showCartServlet and all the additional features including adding
+      items, removing items, checking out and even logging out is done through this page.
+-->
+
+Please enter your name below:
+<form name="loginForm" method="post" action="loginServlet">
+    <input type="text" name="username" />
+    <input type="password" name="password">
+    <input type="submit" name="submit" value="submit" />
+</form>
+</body>
+</html>
